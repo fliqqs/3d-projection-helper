@@ -4,7 +4,14 @@ use macroquad::prelude::*;
 // const for vector view height and width
 const VECTOR_VIEW_WIDTH: i32 = 200;
 
-pub(crate) fn mini_vector_viewer(x: i32, y: i32, x_offset: i32, z_offset: i32, y_angle: f32, vec_to_draw: Vec3) {
+pub(crate) fn mini_vector_viewer(
+    x: i32,
+    y: i32,
+    x_offset: i32,
+    z_offset: i32,
+    y_angle: f32,
+    vec_to_draw: Vec3,
+) {
     // let forward = vec3(0.9622505, -0.19245009, -0.19245009).normalize();
 
     let forward = vec_to_draw.normalize();
@@ -20,7 +27,6 @@ pub(crate) fn mini_vector_viewer(x: i32, y: i32, x_offset: i32, z_offset: i32, y
         ..Default::default()
     };
     set_camera(&camera);
-
 
     let pivot = vec3(x_offset as f32, 0.0, z_offset as f32);
     let rotation = Quat::from_rotation_y(y_angle);
