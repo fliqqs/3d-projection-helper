@@ -15,8 +15,8 @@ function App() {
       <main className="container">
         <div className="description">
           <p>
-            A demo of common elements used in computer graphics, showing world and view space and how it goes to projects to the screen. 
-            for networked games. Built with Rust and WebAssembly.
+            A demo of common elements used in computer graphics, showing world and view space and how it goes to projects to the screen.
+            Built with Rust and WebAssembly.
           </p>
         </div>
         <WasmDemo />
