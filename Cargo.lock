@@ -152,7 +152,7 @@ dependencies = [
  "glam 0.27.0",
  "image",
  "macroquad_macro",
- "miniquad",
+ "miniquad 0.4.8",
  "quad-rand",
 ]
 
@@ -169,6 +169,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb"
 dependencies = [
  "libc",
+]
+
+[[package]]
+name = "miniquad"
+version = "0.3.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1251d63dfea7109063b2cec354253e8bf150e7878837a6ac0f9185d6a2518b6"
+dependencies = [
+ "libc",
+ "ndk-sys",
+ "objc",
+ "winapi",
 ]
 
 [[package]]
@@ -209,6 +221,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "objc"
+version = "0.2.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "915b1b472bc21c53464d6c8461c9d3af805ba1ef837e1cac254428f4a77177b1"
+dependencies = [
+ "malloc_buf",
+]
+
+[[package]]
 name = "objc-rs"
 version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -236,6 +257,8 @@ version = "0.1.0"
 dependencies = [
  "glam 0.24.2",
  "macroquad",
+ "miniquad 0.3.16",
+ "sapp-wasm",
 ]
 
 [[package]]
@@ -243,6 +266,12 @@ name = "quad-rand"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5a651516ddc9168ebd67b24afd085a718be02f8858fe406591b013d101ce2f40"
+
+[[package]]
+name = "sapp-wasm"
+version = "0.1.26"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "00e859e8645a3bcb85aecd40bab883438e4105f21b21bccbeac2348760f508bb"
 
 [[package]]
 name = "simd-adler32"

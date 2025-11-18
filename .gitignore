@@ -1,1 +1,7 @@
 /target
+/.idea
+node_modules/
+web/node_modules/
+
+target/
+Cargo.lock

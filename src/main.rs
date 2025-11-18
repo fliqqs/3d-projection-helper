@@ -48,7 +48,6 @@ fn handle_input(ref mut angle: &mut f32) {
 fn construct_view_matrix(position: Vec3, target: Vec3, up: Vec3, angle: f32) -> Mat4 {
     let forward = (target - position).normalize();
 
-    draw_text(&format!("forward view vector"), 500.0, 400.0, 20.0, RED);
     vector_viewer::mini_vector_viewer(500, 0, 500, 500, angle, forward);
 
     let right = forward.cross(up).normalize();

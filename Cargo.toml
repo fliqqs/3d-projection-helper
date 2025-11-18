@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 macroquad = "0.4.10"
 glam = "0.24.0"
+miniquad = "0.3.12"
+sapp-wasm = "0.1.26"
